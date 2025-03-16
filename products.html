@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- SEO: Description, Keywords, Author, and Robots -->
+    <meta name="description"
+        content="Lewoint - Your premier destination for electronics, gadgets, and tech accessories. Find the latest devices and tech innovations at competitive prices." />
+    <meta name="keywords"
+        content="electronics store, gadgets, smartphones, laptops, computers, tech accessories, digital devices, Lewoint" />
+    <meta name="author" content="Lewoint Team" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Data for Social Media -->
+    <meta property="og:title" content="Lewoint - Electronics Store" />
+    <meta property="og:description"
+        content="Discover cutting-edge electronics and tech gadgets at Lewoint. Shop smartphones, laptops, accessories and more with expert support!" />
+    <meta property="og:image" content="assets/images/logo.png" />
+    <meta property="og:url" content="https://www.lewoint.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lewoint - Electronics Store" />
+    <meta name="twitter:description"
+        content="Your one-stop shop for premium electronics. Find the latest tech with expert guidance and competitive prices at Lewoint." />
+    <meta name="twitter:image" content="assets/images/logo.png" />
+
+    <!-- Favicon and Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- slider css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/style.css?v=4" />
+
+    <title>Lewoint - E-commerce</title>
+
+    <script>
+        window.addEventListener("load", () => {
+            const savedColor = localStorage.getItem("themeColor");
+            if (savedColor) {
+                document.documentElement.style.setProperty("--second", savedColor);
+                colorOptions.forEach((option) => {
+                    if (option.getAttribute("data-color") === savedColor) {
+                        option.classList.add("active");
+                    }
+                });
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- ***** Header ***** -->
+    <header>
+        <!-- ***** Top Bar ***** -->
+        <div class="top_bar">
+            <div class="container">
+                <p class="hide-sm">Flat 50% Off On Grocery Shop.</p>
+
+                <div class="actions">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Currency
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">EUR €</a></li>
+                            <li><a class="dropdown-item" href="#">USD $</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Location
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/flags/Flag_of_Egypt.svg" alt=""> Egypt
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/flags/ar.svg" alt=""> Saudia Arabia
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/flags/Flag_of_Kuwait.svg" alt=""> Kuwait
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Language
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/flags/en.png" alt=""> English
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/flags/ar.svg" alt=""> Arabic
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/flags/sp.svg" alt=""> French
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="faqs.html" class="link hide-sm">Need Help?</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ***** Navigation ***** -->
+        <nav class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html" class="logo"><img src="assets/images/logo.png"></a>
+
+                <a href="categories.html" class="categories_btn">
+                    <img src="assets/images/icons/categories.svg" alt="">
+                </a>
+            </div>
+
+            <form action="products.html">
+                <select name="category" id="category" class="hide-sm">
+                    <option value="all">All categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Fashion</option>
+                </select>
+                <input type="search" placeholder="Search for products...">
+                <button type="submit"><i class="fa-regular fa-search"></i></button>
+            </form>
+
+            <div class="actions hide-sm">
+                <a href="login.html">
+                    <img src="assets/images/icons/user.svg" alt="user">
+                    <!-- Accout if authed -->
+                    <h6>Login</h6>
+                </a>
+
+                <a href="wishlist.html">
+                    <img src="assets/images/icons/heart.svg">
+                    <h6>Wishlist</h6>
+                </a>
+
+                <a href="cart.html">
+                    <img src="assets/images/icons/shopping-bag.svg">
+                    <h6>Cart</h6>
+                </a>
+
+                <a href="categories.html">
+                    <img src="assets/images/icons/categories.svg" alt="">
+                    <h6>categories</h6>
+                </a>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- ***** Main Content ***** -->
+    <main>
+        <section class="page_header">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <h6>Products Page</h6>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-angles-right"></i>
+                        </li>
+                        <li>
+                            <p>Products Page</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="products_section">
+            <div class="container">
+                <div class="row">
+                    <!-- **** filter side **** -->
+                    <div class="col-lg-3 p-2" data-aos="fade-up">
+                        <div class="filter_side">
+                            <div class="section">
+                                <h3>Category</h3>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="smartphones">
+                                        <label for="smartphones">Smartphones</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="laptops">
+                                        <label for="laptops">Laptops</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="gaming">
+                                        <label for="gaming">Gaming</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="audio">
+                                        <label for="audio">Audio</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="accessories">
+                                        <label for="accessories">Accessories</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="section">
+                                <h3>Storage</h3>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="128gb">
+                                        <label for="128gb">128GB</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="256gb">
+                                        <label for="256gb">256GB</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="512gb">
+                                        <label for="512gb">512GB</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="1tb">
+                                        <label for="1tb">1TB</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="section">
+                                <h3>Color</h3>
+                                <ul class="colors">
+                                    <li>
+                                        <label for="#000000">
+                                            <input type="radio" name="color" id="#000000">
+                                            <span style="background: #000000;"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="#ffffff">
+                                            <input type="radio" name="color" id="#ffffff">
+                                            <span style="background: #ffffff;"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="#c4d6f9">
+                                            <input type="radio" name="color" id="#c4d6f9">
+                                            <span style="background: #c4d6f9;"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="#ff748b">
+                                            <input type="radio" name="color" id="#ff748b">
+                                            <span style="background: #ff748b;"></span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="section">
+                                <div class="price-container">
+                                    <h3>Price</h3>
+                                    <div class="price-display">
+                                        <input type="text" id="priceRange" readonly>
+                                    </div>
+                                    <div id="slider-range"></div>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <h3>Tags</h3>
+                                <ul class="tags">
+                                    <li>
+                                        <label for="apple">
+                                            <input type="checkbox" id="apple">
+                                            <span>Apple</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="samsung">
+                                            <input type="checkbox" id="samsung">
+                                            <span>Samsung</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="sony">
+                                            <input type="checkbox" id="sony">
+                                            <span>Sony</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="microsoft">
+                                            <input type="checkbox" id="microsoft">
+                                            <span>Microsoft</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- **** products side **** -->
+                    <div class="col-lg-9 p-0">
+                        <div class="row">
+                            <!-- **** filter products **** -->
+                            <div class="col-12 p-2">
+                                <div class="filter_products">
+                                    <div class="listing_type">
+                                        <button class="active" id="grid"><i class="fa-solid fa-grid-2"></i></button>
+                                        <button id="list"><i class="fa-solid fa-list-ul"></i></button>
+                                    </div>
+
+                                    <select name="sort" id="sort">
+                                        <option value="newest">Newest</option>
+                                        <option value="oldest">Oldest</option>
+                                        <option value="price-asc">Price (asc)</option>
+                                        <option value="price-desc">Price (desc)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12 p-2 grid_item">
+                                <a href="product.html" class="product_card" data-aos="fade-up">
+                                    <div class="media_container">
+                                        <div class="img front">
+                                            <div class="thumb">
+                                                <span>NEW</span>
+                                            </div>
+                                            <div class="percentage">
+                                                <span>20%</span>
+                                            </div>
+                                            <img src="assets/images/products/iphone-15.jpg" alt="iPhone 15">
+                                        </div>
+                                        <div class="img back">
+                                            <img src="assets/images/products/iphone-15-back.jpg" alt="iPhone 15">
+                                            <div class="actions">
+                                                <button class="fav_btn active"><i
+                                                        class="fa-regular fa-heart"></i></button>
+                                                <button data-bs-toggle="modal" data-bs-target="#productModal"
+                                                    class="eye-btn">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button><i class="fa-regular fa-arrow-right-arrow-left"></i></button>
+                                                <button><i class="fa-regular fa-bag-shopping"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="category_rate">
+                                            <span>Smartphones</span>
+                                            <ul>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                            </ul>
+                                        </div>
+                                        <h6>iPhone 15 Pro Max - 256GB</h6>
+                                        <p class="description">
+                                            The latest iPhone featuring a stunning display, powerful A17 Pro chip, and
+                                            advanced camera system.
+                                        </p>
+                                        <div class="price_quantity">
+                                            <div class="price">
+                                                <span><b>999.99</b> USD</span>
+                                                <span class="old_price">1,199.99 USD</span>
+                                            </div>
+                                            <div class="q">
+                                                <span>256GB</span>
+                                            </div>
+                                        </div>
+                                        <span class="stock">In Stock</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12 p-2 grid_item">
+                                <a href="product.html" class="product_card" data-aos="fade-up">
+                                    <div class="media_container">
+                                        <div class="img front">
+                                            <div class="thumb">
+                                                <span>HOT</span>
+                                            </div>
+                                            <div class="percentage">
+                                                <span>15%</span>
+                                            </div>
+                                            <img src="assets/images/products/macbook-air.jpg" alt="MacBook Air">
+                                        </div>
+                                        <div class="img back">
+                                            <img src="assets/images/products/macbook-air-back.jpg" alt="MacBook Air">
+                                            <div class="actions">
+                                                <button class="fav_btn"><i class="fa-regular fa-heart"></i></button>
+                                                <button data-bs-toggle="modal" data-bs-target="#productModal"
+                                                    class="eye-btn">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button><i class="fa-regular fa-arrow-right-arrow-left"></i></button>
+                                                <button><i class="fa-regular fa-bag-shopping"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="category_rate">
+                                            <span>Laptops</span>
+                                            <ul>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                            </ul>
+                                        </div>
+                                        <h6>MacBook Air M2 - 512GB</h6>
+                                        <p class="description">
+                                            Supercharged by the M2 chip, featuring all-day battery life and a stunning
+                                            Retina display.
+                                        </p>
+                                        <div class="price_quantity">
+                                            <div class="price">
+                                                <span><b>1,299.99</b> USD</span>
+                                                <span class="old_price">1,499.99 USD</span>
+                                            </div>
+                                            <div class="q">
+                                                <span>512GB</span>
+                                            </div>
+                                        </div>
+                                        <span class="stock">In Stock</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12 p-2 grid_item">
+                                <a href="product.html" class="product_card" data-aos="fade-up">
+                                    <div class="media_container">
+                                        <div class="img front">
+                                            <div class="thumb">
+                                                <span>SALE</span>
+                                            </div>
+                                            <img src="assets/images/products/ps5.jpg" alt="PS5">
+                                        </div>
+                                        <div class="img back">
+                                            <img src="assets/images/products/ps5-back.jpg" alt="PS5">
+                                            <div class="actions">
+                                                <button class="fav_btn"><i class="fa-regular fa-heart"></i></button>
+                                                <button data-bs-toggle="modal" data-bs-target="#productModal"
+                                                    class="eye-btn">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button><i class="fa-regular fa-arrow-right-arrow-left"></i></button>
+                                                <button><i class="fa-regular fa-bag-shopping"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="category_rate">
+                                            <span>Gaming</span>
+                                            <ul>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                            </ul>
+                                        </div>
+                                        <h6>PlayStation 5 Digital Edition</h6>
+                                        <p class="description">
+                                            Next-gen gaming console with lightning-fast loading, stunning 4K graphics
+                                            and revolutionary DualSense controller.
+                                        </p>
+                                        <div class="price_quantity">
+                                            <div class="price">
+                                                <span><b>449.99</b> USD</span>
+                                                <span class="old_price">499.99 USD</span>
+                                            </div>
+                                            <div class="q">
+                                                <span>1TB</span>
+                                            </div>
+                                        </div>
+                                        <span class="stock">In Stock</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12 p-2 grid_item">
+                                <a href="product.html" class="product_card" data-aos="fade-up">
+                                    <div class="media_container">
+                                        <div class="img front">
+                                            <div class="percentage">
+                                                <span>25%</span>
+                                            </div>
+                                            <img src="assets/images/products/airpods.jpg" alt="AirPods Pro">
+                                            <div class="countdown_timer">
+                                                <div class="timer-item">
+                                                    <span class="days">02</span>
+                                                    <span class="label">Days</span>
+                                                </div>
+                                                <div class="timer-item">
+                                                    <span class="hours">12</span>
+                                                    <span class="label">Hours</span>
+                                                </div>
+                                                <div class="timer-item">
+                                                    <span class="minutes">45</span>
+                                                    <span class="label">Minutes</span>
+                                                </div>
+                                                <div class="timer-item">
+                                                    <span class="seconds">30</span>
+                                                    <span class="label">Seconds</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="img back">
+                                            <img src="assets/images/products/airpods-back.jpg" alt="AirPods Pro">
+                                            <div class="actions">
+                                                <button class="fav_btn active"><i
+                                                        class="fa-regular fa-heart"></i></button>
+                                                <button data-bs-toggle="modal" data-bs-target="#productModal"
+                                                    class="eye-btn">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button><i class="fa-regular fa-arrow-right-arrow-left"></i></button>
+                                                <button><i class="fa-regular fa-bag-shopping"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="category_rate">
+                                            <span>Audio</span>
+                                            <ul>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                            </ul>
+                                        </div>
+                                        <h6>AirPods Pro (2nd Generation)</h6>
+                                        <p class="description">
+                                            Active noise cancellation, adaptive transparency, and personalized spatial
+                                            audio.
+                                        </p>
+                                        <div class="price_quantity">
+                                            <div class="price">
+                                                <span><b>199.99</b> USD</span>
+                                                <span class="old_price">249.99 USD</span>
+                                            </div>
+                                            <div class="q">
+                                                <span>1 Unit</span>
+                                            </div>
+                                        </div>
+                                        <span class="stock">In Stock</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12 p-2 grid_item">
+                                <a href="product.html" class="product_card">
+                                    <div class="media_container">
+                                        <div class="img front">
+                                            <img src="assets/images/products/keyboard-front.jpg" alt="ZH980 Keyboard">
+                                            <div class="countdown_timer">
+                                                <div class="timer-item">
+                                                    <span class="days">02</span>
+                                                    <span class="label">Days</span>
+                                                </div>
+                                                <div class="timer-item">
+                                                    <span class="hours">18</span>
+                                                    <span class="label">Hours</span>
+                                                </div>
+                                                <div class="timer-item">
+                                                    <span class="minutes">45</span>
+                                                    <span class="label">Minutes</span>
+                                                </div>
+                                                <div class="timer-item">
+                                                    <span class="seconds">30</span>
+                                                    <span class="label">Seconds</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="img back">
+                                            <img src="assets/images/products/keyboard-back.jpg" alt="ZH980 Keyboard">
+                                            <div class="actions">
+                                                <button class="fav_btn"><i class="fa-regular fa-heart"></i></button>
+                                                <button data-bs-toggle="modal" data-bs-target="#productModal"
+                                                    class="eye-btn">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button data-bs-toggle="modal" data-bs-target="#productModal">
+                                                    <i class="fa-regular fa-arrow-right-arrow-left"></i>
+                                                </button>
+                                                <button><i class="fa-regular fa-bag-shopping"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="category_rate">
+                                            <span>Keyboards</span>
+                                            <ul>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <h6>ZH980 Mechanical Gaming Keyboard</h6>
+                                        <div class="price_quantity">
+                                            <div class="price">
+                                                <span><b>89.99</b> USD</span>
+                                                <span class="old_price">129.99 USD</span>
+                                            </div>
+                                            <div class="q">
+                                                <span>RGB</span>
+                                            </div>
+                                        </div>
+                                        <span class="stock">In Stock</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 p-2 grid_item">
+                                <a href="product.html" class="product_card" data-aos="fade-up">
+                                    <div class="media_container">
+                                        <div class="img front">
+                                            <img src="assets/images/products/smartwatch-front.jpg"
+                                                alt="SW200 Smartwatch">
+                                        </div>
+                                        <div class="img back">
+                                            <img src="assets/images/products/smartwatch-back.jpg"
+                                                alt="SW200 Smartwatch">
+                                            <div class="actions">
+                                                <button class="fav_btn"><i class="fa-regular fa-heart"></i></button>
+                                                <button data-bs-toggle="modal" data-bs-target="#productModal"
+                                                    class="eye-btn">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button data-bs-toggle="modal" data-bs-target="#productModal">
+                                                    <i class="fa-regular fa-arrow-right-arrow-left"></i>
+                                                </button>
+                                                <button><i class="fa-regular fa-bag-shopping"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="category_rate">
+                                            <span>Smartwatches</span>
+                                            <ul>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                            </ul>
+                                        </div>
+                                        <h6>SW200 Smart Fitness Watch</h6>
+                                        <div class="price_quantity">
+                                            <div class="price">
+                                                <span><b>199.99</b> USD</span>
+                                                <span class="old_price">249.99 USD</span>
+                                            </div>
+                                            <div class="q">
+                                                <span>Black</span>
+                                            </div>
+                                        </div>
+                                        <span class="stock">In Stock</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 p-2 grid_item">
+                                <a href="product.html" class="product_card" data-aos="fade-up">
+                                    <div class="media_container">
+                                        <div class="img front">
+                                            <div class="countdown_timer">
+                                                <div class="timer-item">
+                                                    <span class="days">00</span>
+                                                    <span class="label">Days</span>
+                                                </div>
+                                                <div class="timer-item">
+                                                    <span class="hours">00</span>
+                                                    <span class="label">Hours</span>
+                                                </div>
+                                                <div class="timer-item">
+                                                    <span class="minutes">00</span>
+                                                    <span class="label">Minutes</span>
+                                                </div>
+                                                <div class="timer-item">
+                                                    <span class="seconds">00</span>
+                                                    <span class="label">Seconds</span>
+                                                </div>
+                                            </div>
+                                            <div class="percentage">
+                                                <span>30%</span>
+                                            </div>
+                                            <img src="assets/images/products/watch1.jpg" alt="p-1">
+                                        </div>
+                                        <div class="img back">
+                                            <img src="assets/images/products/watch1-back.jpg" alt="p-1">
+                                            <div class="actions">
+                                                <button class="fav_btn"><i class="fa-regular fa-heart"></i></button>
+                                                <button data-bs-toggle="modal" data-bs-target="#productModal"
+                                                    class="eye-btn">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button><i class="fa-regular fa-arrow-right-arrow-left"></i></button>
+                                                <button><i class="fa-regular fa-bag-shopping"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        <div class="category_rate">
+                                            <span>Smartwatch</span>
+                                            <ul>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <h6>Galaxy Watch 5 Pro</h6>
+                                        <div class="price_quantity">
+                                            <div class="price">
+                                                <span> <b>399.99</b> USD</span>
+                                                <span class="old_price">499.99 USD</span>
+                                            </div>
+                                            <div class="q">
+                                                <span>Black</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 p-2 grid_item">
+                                <a href="product.html" class="product_card" data-aos="fade-up">
+                                    <div class="media_container">
+                                        <div class="img front">
+                                            <div class="thumb">
+                                                <span>SALE</span>
+                                            </div>
+                                            <img src="assets/images/products/headphones1.jpg" alt="p-1">
+                                        </div>
+                                        <div class="img back">
+                                            <img src="assets/images/products/headphones1-back.jpg" alt="p-1">
+                                            <div class="actions">
+                                                <button class="fav_btn"><i class="fa-regular fa-heart"></i></button>
+                                                <button data-bs-toggle="modal" data-bs-target="#productModal"
+                                                    class="eye-btn">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button><i class="fa-regular fa-arrow-right-arrow-left"></i></button>
+                                                <button><i class="fa-regular fa-bag-shopping"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        <div class="category_rate">
+                                            <span>Headphones</span>
+                                            <ul>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <h6>Sony WH-1000XM4</h6>
+                                        <div class="price_quantity">
+                                            <div class="price">
+                                                <span> <b>299.99</b> USD</span>
+                                                <span class="old_price">349.99 USD</span>
+                                            </div>
+                                            <div class="q">
+                                                <span>Silver</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 p-2 grid_item">
+                                <a href="product.html" class="product_card" data-aos="fade-up">
+                                    <div class="media_container">
+                                        <div class="img front">
+                                            <img src="assets/images/products/charger1.jpg" alt="p-1">
+                                        </div>
+                                        <div class="img back">
+                                            <img src="assets/images/products/charger1-back.jpg" alt="p-1">
+                                            <div class="actions">
+                                                <button class="fav_btn active"><i
+                                                        class="fa-regular fa-heart"></i></button>
+                                                <button data-bs-toggle="modal" data-bs-target="#productModal"
+                                                    class="eye-btn">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button><i class="fa-regular fa-arrow-right-arrow-left"></i></button>
+                                                <button><i class="fa-regular fa-bag-shopping"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        <div class="category_rate">
+                                            <span>Chargers</span>
+                                            <ul>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star filled"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <h6>Fast Wireless Charger</h6>
+                                        <div class="price_quantity">
+                                            <div class="price">
+                                                <span> <b>49.99</b> USD</span>
+                                                <span class="old_price">69.99 USD</span>
+                                            </div>
+                                            <div class="q">
+                                                <span>15W</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- **** pagination **** -->
+                            <div class="col-12 p-2">
+                                <div class="pagination_container" data-aos="fade-up">
+                                    <h6>Showing 1-4 of 12 item(s)</h6>
+                                    <div class="pagination">
+                                        <button class="prev disabled">
+                                            <i class="fa-regular fa-chevron-left"></i>
+                                        </button>
+
+                                        <button class="active">1</button>
+                                        <button>2</button>
+                                        <button>3</button>
+
+                                        <button class="next active">
+                                            <i class="fa-regular fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ***** Footer ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 p-2">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png">
+                    </a>
+                    <p>Lewoint is the biggest market of grocery products. Get your daily needs from our store.</p>
+                    <div class="btns">
+                        <a href="javascript:void(0)">
+                            <img src="assets/images/icons/app-store.svg" alt="app-store">
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img src="assets/images/icons/google-play.svg" alt="google-play">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-12 p-2">
+                    <h3>Category</h3>
+                    <ul>
+                        <li><a href="#">Dairy & Milk</a></li>
+                        <li><a href="#">Snack & Spice</a></li>
+                        <li><a href="#">Fast Food</a></li>
+                        <li><a href="#">Bakery</a></li>
+                        <li><a href="#">Seafood</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-12 p-2">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Legal Notice</a></li>
+                        <li><a href="terms-conditions.html">Terms & conditions</a></li>
+                        <li><a href="#">Secure payment</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-12 p-2">
+                    <h3>Account</h3>
+                    <ul>
+                        <li><a href="login.html">Sign In</a></li>
+                        <li><a href="cart.html">View Cart</a></li>
+                        <li><a href="return-policy.html">Return Policy</a></li>
+                        <li><a href="#">Become a Vendor</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                        <li><a href="#">Payments</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-12 p-2">
+                    <h3>Contact</h3>
+
+                    <ul>
+                        <li><i class="fa-regular fa-map-marker-alt"></i> 1234, 5th Avenue, New York, USA</li>
+                        <li><i class="fa-brands fa-whatsapp"></i> +123 456 7890</li>
+                        <li><i class="fa-regular fa-envelope"></i> example@example.com</li>
+                    </ul>
+
+                    <div class="social">
+                        <a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="javascript:void(0)"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-12 p-2">
+                    <div class="copy_rights">
+                        <p>Copyright © 2022 Lewoint. All Rights Reserved.</p>
+                        <div class="payments">
+                            <img src="assets/images/payments/1.svg" alt="mastercard">
+                            <img src="assets/images/payments/2.svg" alt="visa">
+                            <img src="assets/images/payments/3.svg" alt="paypal">
+                            <img src="assets/images/payments/4.svg" alt="apple pay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ***** Responsive Nav ***** -->
+    <div class="responsive_navbar">
+        <ul>
+            <li>
+                <a href="orders.html">
+                    <img src="assets/images/icons/orders.svg">
+                    <h6>My Orders</h6>
+                </a>
+            </li>
+            <li>
+                <a href="wishlist.html">
+                    <img src="assets/images/icons/heart.svg">
+                    <h6>Wishlist</h6>
+                </a>
+            </li>
+            <li>
+                <a href="cart.html">
+                    <img src="assets/images/icons/shopping-bag.svg">
+                    <h6>Cart</h6>
+                </a>
+            </li>
+            <li>
+                <a href="edit-profile.html">
+                    <img src="assets/images/icons/user.svg">
+                    <h6>My Account</h6>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ***** Modals ***** -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body product_view">
+                    <div class="row">
+                        <div class="col-lg-5 col-12 p-2">
+                            <div class="product_img">
+                                <img src="assets/images/products/camera.jpg" alt="PS5 Camera">
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-12 p-2">
+                            <div class="content">
+                                <h3>PS5 HD Camera</h3>
+
+                                <div class="d-flex align-items-center gap-2 my-3">
+                                    <ul class="rate">
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <span> | </span>
+                                    <span>458 Ratings</span>
+                                </div>
+
+                                <p>
+                                    Add a personal touch to your gameplay broadcasts and vlogs with the HD camera for PS5 
+                                    console. Featuring dual wide-angle lenses and a built-in stand, the camera puts you 
+                                    in the spotlight.
+                                </p>
+
+                                <h6 class="mb-4 price">Price: <span>$59.99</span> <span
+                                        class="old_price">$69.99</span>
+                                </h6>
+
+                                <h6>Storage</h6>
+                                <div class="radios">
+                                    <label for="128gb">
+                                        <input type="radio" name="storage" id="128gb" checked>
+                                        <span>128GB</span>
+                                    </label>
+                                    <label for="256gb">
+                                        <input type="radio" name="storage" id="256gb">
+                                        <span>256GB</span>
+                                    </label>
+                                    <label for="512gb">
+                                        <input type="radio" name="storage" id="512gb">
+                                        <span>512GB</span>
+                                    </label>
+                                    <label for="1tb">
+                                        <input type="radio" name="storage" id="1tb">
+                                        <span>1TB</span>
+                                    </label>
+                                </div>
+
+                                <div class="actions">
+                                    <div class="quantity">
+                                        <button><i class="fa-solid fa-minus"></i></button>
+                                        <span>1</span>
+                                        <button><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                    <button class="cart_btn">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="theme_customer">
+        <i class="fa-regular fa-gear"></i>
+        <div class="theme_customer_container">
+            <div class="theme_customer_header">
+                <h6>Color</h6>
+                <button class="close_btn"><i class="fa-regular fa-xmark"></i></button>
+            </div>
+            <div class="theme_customer_body">
+                <div class="color_picker">
+                    <div class="color_options">
+                        <button class="color_option" data-color="#FF6B6B" style="background: #FF6B6B;"></button>
+                        <button class="color_option" data-color="#6c7fd8" style="background: #6c7fd8;"></button>
+                        <button class="color_option" data-color="#45B7D1" style="background: #45B7D1;"></button>
+                        <button class="color_option" data-color="#96CEB4" style="background: #96CEB4;"></button>
+                        <button class="color_option" data-color="#e91e63" style="background: #e91e63;"></button>
+                        <button class="color_option" data-color="#D4A5A5" style="background: #D4A5A5;"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** Scripts ***** -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/app.js?v=1"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 130,
+                max: 500,
+                values: [200, 450],
+                slide: function (event, ui) {
+                    $("#priceRange").val(`$${ui.values[0]} - $${ui.values[1]}`);
+                }
+            });
+            $("#priceRange").val(`$${$("#slider-range").slider("values", 0)} - $${$("#slider-range").slider("values", 1)}`);
+        });
+
+    </script>
+
+    <script>
+        const gridBtn = document.getElementById("grid");
+        const listBtn = document.getElementById("list");
+        const gridItems = document.querySelectorAll(".grid_item");
+        const products = document.querySelectorAll(".product_card");
+
+
+        listBtn.addEventListener("click", () => {
+            gridBtn.classList.remove("active");
+            listBtn.classList.add("active");
+            gridItems.forEach(item => {
+                item.classList.remove("col-lg-4");
+                item.classList.remove("col-md-6");
+            });
+            products.forEach(product => {
+                product.classList.add("horizontal");
+            });
+        });
+
+        gridBtn.addEventListener("click", () => {
+            listBtn.classList.remove("active");
+            gridBtn.classList.add("active");
+            gridItems.forEach(item => {
+                item.classList.add("col-lg-4");
+                item.classList.add("col-md-6");
+            });
+            products.forEach(product => {
+                product.classList.remove("horizontal");
+            });
+        });
+    </script>
+</body>
+
+</html>

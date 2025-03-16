@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- SEO: Description, Keywords, Author, and Robots -->
+    <meta name="description"
+        content="Lewoint - Your premier destination for electronics, gadgets, and tech accessories. Find the latest devices and tech innovations at competitive prices." />
+    <meta name="keywords"
+        content="electronics store, gadgets, smartphones, laptops, computers, tech accessories, digital devices, Lewoint" />
+    <meta name="author" content="Lewoint Team" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Data for Social Media -->
+    <meta property="og:title" content="Lewoint - Electronics Store" />
+    <meta property="og:description"
+        content="Discover cutting-edge electronics and tech gadgets at Lewoint. Shop smartphones, laptops, accessories and more with expert support!" />
+    <meta property="og:image" content="assets/images/logo.png" />
+    <meta property="og:url" content="https://www.lewoint.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lewoint - Electronics Store" />
+    <meta name="twitter:description"
+        content="Your one-stop shop for premium electronics. Find the latest tech with expert guidance and competitive prices at Lewoint." />
+    <meta name="twitter:image" content="assets/images/logo.png" />
+
+    <!-- Favicon and Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/style.css?v=4" />
+
+    <title>Lewoint - E-commerce</title>
+
+    <script>
+        window.addEventListener("load", () => {
+            const savedColor = localStorage.getItem("themeColor");
+            if (savedColor) {
+                document.documentElement.style.setProperty("--second", savedColor);
+                colorOptions.forEach((option) => {
+                    if (option.getAttribute("data-color") === savedColor) {
+                        option.classList.add("active");
+                    }
+                });
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- ***** Header ***** -->
+    <header>
+        <!-- ***** Top Bar ***** -->
+        <div class="top_bar">
+            <div class="container">
+                <p class="hide-sm">Flat 50% Off On Grocery Shop.</p>
+
+                <div class="actions">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Currency
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">EUR €</a></li>
+                            <li><a class="dropdown-item" href="#">USD $</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Location
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/flags/Flag_of_Egypt.svg" alt=""> Egypt
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/flags/ar.svg" alt=""> Saudia Arabia
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/flags/Flag_of_Kuwait.svg" alt=""> Kuwait
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Language
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/flags/en.png" alt=""> English
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/flags/ar.svg" alt=""> Arabic
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/flags/sp.svg" alt=""> French
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="faqs.html" class="link hide-sm">Need Help?</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ***** Navigation ***** -->
+        <nav class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html" class="logo"><img src="assets/images/logo.png"></a>
+
+                <a href="categories.html" class="categories_btn">
+                    <img src="assets/images/icons/categories.svg" alt="">
+                </a>
+            </div>
+
+            <form action="products.html">
+                <select name="category" id="category" class="hide-sm">
+                    <option value="all">All categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Fashion</option>
+                </select>
+                <input type="search" placeholder="Search for products...">
+                <button type="submit"><i class="fa-regular fa-search"></i></button>
+            </form>
+
+            <div class="actions hide-sm">
+                <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="assets/images/icons/user.svg" alt="user">
+                        <h6>Account</h6>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li>
+                            <a class="dropdown-item" href="edit-profile.html">
+                                <i class="fa-regular fa-user-pen"></i>
+                                Edit Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="orders.html">
+                                <i class="fa-regular fa-cube"></i> Orders
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="login.html">
+                                <i class="fa-regular fa-arrow-right-from-bracket"></i> Logout
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="login.html">
+                                <i class="fa-regular fa-user-xmark"></i> Delete
+                                Account
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="wishlist.html">
+                    <img src="assets/images/icons/heart.svg">
+                    <h6>Wishlist</h6>
+                </a>
+
+                <a href="cart.html">
+                    <img src="assets/images/icons/shopping-bag.svg">
+                    <h6>Cart</h6>
+                </a>
+
+                <a href="categories.html">
+                    <img src="assets/images/icons/categories.svg" alt="">
+                    <h6>categories</h6>
+                </a>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- ***** Main Content ***** -->
+    <main>
+        <!-- ***** Hero Section ***** -->
+        <section class="hero_section__3">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-5 col-12 p-2">
+                        <div class="categories_grid">
+                            <a href="products.html" class="category_card" style="background: #fef1f1;"
+                                data-aos="fade-up">
+                                <img src="assets/images/categories/1.svg" alt="1">
+                                <h6>vegetables</h6>
+                                <p>485 items</p>
+                            </a>
+
+                            <a href="products.html" class="category_card" style="background: #e1fcf2;"
+                                data-aos="fade-up">
+                                <img src="assets/images/categories/2.svg" alt="1">
+                                <h6>Fruits</h6>
+                                <p>291 items</p>
+                            </a>
+
+                            <a href="products.html" class="category_card" style="background: #f4f1fe;"
+                                data-aos="fade-up">
+                                <img src="assets/images/categories/3.svg" alt="1">
+                                <h6>Cold Drinks</h6>
+                                <p>45 items</p>
+                            </a>
+
+                            <a href="products.html" class="category_card" style="background: #fbf9e4;"
+                                data-aos="fade-up">
+                                <img src="assets/images/categories/4.svg" alt="1">
+                                <h6>Bakery</h6>
+                                <p>85 items</p>
+                            </a>
+
+                            <a href="products.html" class="category_card" style="background: #fbf9e4;"
+                                data-aos="fade-up">
+                                <img src="assets/images/categories/6.svg" alt="1">
+                                <h6>Fast Food</h6>
+                                <p>25 items</p>
+                            </a>
+
+                            <a href="products.html" class="category_card" style="background: #f4f1fe;"
+                                data-aos="fade-up">
+                                <img src="assets/images/categories/5.svg" alt="1">
+                                <h6>Snacks</h6>
+                                <p>85 items</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-12 p-2">
+                        <div class="swiper hero_swiper_2" data-aos="fade-up">
+                            <div class="swiper-wrapper">
+                                <!-- slide 1 -->
+                                <div class="swiper-slide">
+                                    <div class="hero_slide">
+                                        <img src="assets/images/s1.jpg" alt="Welcome to Our Store">
+                                    </div>
+                                </div>
+
+                                <!-- slide 2 -->
+                                <div class="swiper-slide">
+                                    <div class="hero_slide">
+                                        <img src="assets/images/s2.jpg" alt="Special Offers">
+                                    </div>
+                                </div>
+
+                                <!-- slide 3 -->
+                                <div class="swiper-slide">
+                                    <div class="hero_slide">
+                                        <img src="assets/images/s3.jpg" alt="New Arrivals">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ***** Categories ***** -->
+        <section class="categories_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-12 p-2 d-lg-block d-none">
+                        <div class="img">
+                            <img src="assets/images/category.jpg" alt="category">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-12 p-2">
+                        <div class="content">
+                            <div data-aos="fade-up">
+                                <h2>Explore<br>Categories</h2>
+                            </div>
+
+                            <div class="swiper categories_swiper">
+                                <div class="swiper-wrapper">
+                                    <!-- slide 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="category_card" style="background: #fef1f1;" data-aos="flip-left">
+                                            <img src="assets/images/categories/1.svg" alt="1">
+                                            <h6>vegetables</h6>
+                                            <p>485 items</p>
+                                        </div>
+                                    </div>
+                                    <!-- slide 2 -->
+                                    <div class="swiper-slide">
+                                        <div class="category_card" style="background: #e1fcf2;" data-aos="flip-left">
+                                            <img src="assets/images/categories/2.svg" alt="1">
+                                            <h6>Fruits</h6>
+                                            <p>291 items</p>
+                                        </div>
+                                    </div>
+                                    <!-- slide 3 -->
+                                    <div class="swiper-slide">
+                                        <div class="category_card" style="background: #f4f1fe;" data-aos="flip-left">
+                                            <img src="assets/images/categories/3.svg" alt="1">
+                                            <h6>Cold Drinks</h6>
+                                            <p>45 items</p>
+                                        </div>
+                                    </div>
+                                    <!-- slide 4 -->
+                                    <div class="swiper-slide">
+                                        <div class="category_card" style="background: #fbf9e4;" data-aos="flip-left">
+                                            <img src="assets/images/categories/4.svg" alt="1">
+                                            <h6>Bakery</h6>
+                                            <p>85 items</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ***** Deals of the day ***** -->
+        <section class="home_products_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 p-2">
+                        <h2>Deals of the <span>day</span></h2>
+                        <p>Don't wait. The time will never be just right.</p>
+                    </div>
+                    <div class="col-12 p-2">
+                        <div class="swiper deals_swiper">
+                            <div class="swiper-wrapper">
+                                <!-- slide 1 -->
+                                <div class="swiper-slide">
+                                    <a href="product.html" class="product_card" data-aos="fade-up">
+                                        <div class="media_container">
+                                            <div class="img front">
+                                                <div class="thumb">
+                                                    <span>SALE</span>
+                                                </div>
+                                                <div class="percentage">
+                                                    <span>30%</span>
+                                                </div>
+                                                <img src="assets/images/products/1.jpg" alt="p-1">
+                                            </div>
+                                            <div class="img back">
+                                                <img src="assets/images/products/back-1.jpg" alt="p-1">
+                                                <div class="actions">
+                                                    <button class="fav_btn active"><i
+                                                            class="fa-regular fa-heart"></i></button>
+                                                    <button data-bs-toggle="modal" data-bs-target="#productModal"
+                                                        class="eye-btn">
+                                                        <i class="fa-regular fa-eye"></i>
+                                                    </button>
+                                                    <button data-bs-toggle="modal" data-bs-target="#productModal">
+                                                        <i class="fa-regular fa-arrow-right-arrow-left"></i>
+                                                    </button>
+                                                    <button><i class="fa-regular fa-bag-shopping"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="content">
+                                            <div class="category_rate">
+                                                <span>Chocos</span>
+                                                <ul>
+                                                    <li><i class="fas fa-star filled"></i></li>
+                                                    <li><i class="fas fa-star filled"></i></li>
+                                                    <li><i class="fas fa-star filled"></i></li>
+                                                    <li><i class="fas fa-star filled"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <h6>Mixed Fruits Chocolates Pack</h6>
+                                            <div class="price_quantity">
+                                                <div class="price">
+                                                    <span> <b>2.99</b> sar</span>
+                                                    <span class="old_price"> 5.50 sar</span>
+                                                    <span class="stock"> 3 left</span>
+                                                </div>
+                                                <div class="q">
+                                                    <span>1 Pack</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- slide 2 -->
+                                <div class="swiper-slide">
+                                    <a href="product.html" class="product_card" data-aos="fade-up">
+                                        <div class="media_container">
+                                            <div class="img front">
+                                                <div class="thumb">
+                                                    <span>NEW</span>
+                                                </div>
+                                                <img src="assets/images/products/2.jpg" alt="p-1">
+                                            </div>
+                                            <div class="img back">
+                                                <img src="assets/images/products/back-2.jpg" alt="p-1">
+                                                <div class="actions">
+                                                    <button class="fav_btn"><i class="fa-regular fa-heart"></i></button>
+                                                    <button data-bs-toggle="modal" data-bs-target="#productModal"
+                                                        class="eye-btn">
+                                                        <i class="fa-regular fa-eye"></i>
+                                                    </button>
+                                                    <button data-bs-toggle="modal" data-bs-target="#productModal">
+                                                        <i class="fa-regular fa-arrow-right-arrow-left"></i>
+                                                    </button>
+                                                    <button><i class="fa-regular fa-bag-shopping"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="category_rate">
+                                                <span>Juices</span>
+                                                <ul>
+                                                    <li><i class="fas fa-star filled"></i></li>
+                                                    <li><i class="fas fa-star filled"></i></li>
+                                                    <li><i class="fas fa-star filled"></i></li>
+                                                    <li><i class="fas fa-star filled"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <h6>Organic Apple Juice Pack</h6>
+                                            <div class="price_quantity">
+                                                <div class="price">
+                                                    <span> <b>2.99</b> sar</span>
+                                                    <span class="stock"> 3 left</span>
+                                                </div>
+                                                <div class="q">
+                                                    <span>1 Pack</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- slide 3 -->
+                                <div class="swiper-slide">
+                                    <a href="product.html" class="product_card" data-aos="fade-up">
+                                        <div class="media_container">
+                                            <div class="img front">
+                                                <div class="thumb">
+                                                    <span>HOT</span>
+                                                </div>
+                                                <img src="assets/images/products/3.jpg" alt="p-1">
+                                            </div>
+                                            <div class="img back">
+                                                <img src="assets/images/products/back-3.jpg" alt="p-1">
+                                                <div class="actions">
+                                                    <button class="fav_btn"><i class="fa-regular fa-heart"></i></button>
+                                                    <button data-bs-toggle="modal" data-bs-target="#productModal"
+                                                        class="eye-btn">
+                                                        <i class="fa-regular fa-eye"></i>
+                                                    </button>
+                                                    <button>
+                                                        <i class="fa-regular fa-arrow-right-arrow-left"></i>
+                                                    </button>
+                                                    <button><i class="fa-regular fa-bag-shopping"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="category_rate">
+                                                <span>Chocos</span>
+                                                <ul>
+                                                    <li><i class="fas fa-star filled"></i></li>
+                                                    <li><i class="fas fa-star filled"></i></li>
+                                                    <li><i class="fas fa-star filled"></i></li>
+                                                    <li><i class="fas fa-star filled"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <h6>Mixed Almond nuts juice Pack</h6>
+                                            <div class="price_quantity">
+                                                <div class="price">
+                                                    <span> <b>2.99</b> sar</span>
+                                                    <span class="old_price"> 5.50 sar</span>
+                                                </div>
+                                                <div class="q">
+                                                    <span>250 g</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- slide 4 -->
+                                <div class="swiper-slide">
+                                    <a href="product.html" class="product_card" data-aos="fade-up">
+                                        <div class="media_container">
+                                            <div class="img front">
+                                                <div class="percentage">
+                                                    <span>30%</span>
+                                                </div>
+                                                <img src="assets/images/products/4.jpg" alt="p-1">
+
+                                                <div class="countdown_timer">
+                                                    <div class="timer-item">
+                                                        <span class="days">00</span>
+                                                        <span class="label">Days</span>
+                                                    </div>
+                                                    <div class="timer-item">
+                                                        <span class="hours">00</span>
+                                                        <span class="label">Hours</span>
+                                                    </div>
+                                                    <div class="timer-item">
+                                                        <span class="minutes">00</span>
+                                                        <span class="label">Minutes</span>
+                                                    </div>
+                                                    <div class="timer-item">
+                                                        <span class="seconds">00</span>
+                                                        <span class="label">Seconds</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="img back">
+                                                <img src="assets/images/products/back-4.jpg" alt="p-1">
+                                                <div class="actions">
+                                                    <button class="fav_btn active"><i
+                                                            class="fa-regular fa-heart"></i></button>
+                                                    <button data-bs-toggle="modal" data-bs-target="#productModal"
+                                                        class="eye-btn">
+                                                        <i class="fa-regular fa-eye"></i>
+                                                    </button>
+                                                    <button data-bs-toggle="modal" data-bs-target="#productModal">
+                                                        <i class="fa-regular fa-arrow-right-arrow-left"></i>
+                                                    </button>
+                                                    <button><i class="fa-regular fa-bag-shopping"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="category_rate">
+                                                <span>Chocos</span>
+                                                <ul>
+                                                    <li><i class="fas fa-star filled"></i></li>
+                                                    <li><i class="fas fa-star filled"></i></li>
+                                                    <li><i class="fas fa-star filled"></i></li>
+                                                    <li><i class="fas fa-star filled"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <h6>Fresh Mango Slice Juice</h6>
+                                            <div class="price_quantity">
+                                                <div class="price">
+                                                    <span> <b>2.99</b> sar</span>
+                                                    <span class="stock"> out of stock </span>
+                                                </div>
+                                                <div class="q">
+                                                    <span>1 Pack</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ***** banners Section ***** -->
+        <section class="banners_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 p-2" data-aos="fade-up">
+                        <div class="banner">
+                            <div class="img">
+                                <img src="assets/images/one.png" alt="b1">
+                            </div>
+                            <div class="content">
+                                <h3>Tasty Snack & Fast food</h3>
+                                <p>The flavour of something special</p>
+                                <button>Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 p-2" data-aos="fade-up">
+                        <div class="banner two">
+                            <div class="img">
+                                <img src="assets/images/two.png" alt="b1">
+                            </div>
+                            <div class="content">
+                                <h3>Fresh Fruits & Vegetables</h3>
+                                <p>A healthy meal for every one</p>
+                                <button>Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ***** New Arrivals Section ***** -->
+        <section class="home_products_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 p-2 d-flex align-items-center justify-content-between flex-lg-row flex-column">
+                        <div>
+                            <h2>New <span>Arrivals</span></h2>
+                            <p>Shop online for new arrivals and get free shipping!</p>
+                        </div>
+
+                        <div class="filter">
+                            <button class="filter_btn active">All</button>
+                            /
+                            <button class="filter_btn">Fruits</button>
+                            /
+                            <button class="filter_btn">Vegetables</button>
+                            /
+                            <button class="filter_btn">Juice</button>
+                            /
+                            <button class="filter_btn">Nuts</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 p-2">
+                        <a href="product.html" class="product_card" data-aos="fade-up">
+                            <div class="media_container">
+                                <div class="img front">
+                                    <div class="countdown_timer">
+                                        <div class="timer-item">
+                                            <span class="days">00</span>
+                                            <span class="label">Days</span>
+                                        </div>
+                                        <div class="timer-item">
+                                            <span class="hours">00</span>
+                                            <span class="label">Hours</span>
+                                        </div>
+                                        <div class="timer-item">
+                                            <span class="minutes">00</span>
+                                            <span class="label">Minutes</span>
+                                        </div>
+                                        <div class="timer-item">
+                                            <span class="seconds">00</span>
+                                            <span class="label">Seconds</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                        <span>30%</span>
+                                    </div>
+                                    <img src="assets/images/products/11.jpg" alt="p-1">
+                                </div>
+                                <div class="img back">
+                                    <img src="assets/images/products/11.jpg" alt="p-1">
+                                    <div class="actions">
+                                        <button class="fav_btn"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="modal" data-bs-target="#productModal" class="eye-btn">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </button>
+                                        <button><i class="fa-regular fa-arrow-right-arrow-left"></i></button>
+                                        <button><i class="fa-regular fa-bag-shopping"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <div class="category_rate">
+                                    <span>Fruit</span>
+                                    <ul>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <h6>Red Cherry Serbia</h6>
+                                <div class="price_quantity">
+                                    <div class="price">
+                                        <span> <b>2.99</b> sar</span>
+                                        <span class="old_price"> 5.50 sar</span>
+                                    </div>
+                                    <div class="q">
+                                        <span>1 Pack</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 p-2">
+                        <a href="product.html" class="product_card" data-aos="fade-up">
+                            <div class="media_container">
+                                <div class="img front">
+                                    <div class="thumb">
+                                        <span>SALE</span>
+                                    </div>
+                                    <img src="assets/images/products/7.jpg" alt="p-1">
+                                </div>
+                                <div class="img back">
+                                    <img src="assets/images/products/back-7.jpg" alt="p-1">
+                                    <div class="actions">
+                                        <button class="fav_btn"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="modal" data-bs-target="#productModal" class="eye-btn">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </button>
+                                        <button><i class="fa-regular fa-arrow-right-arrow-left"></i></button>
+                                        <button><i class="fa-regular fa-bag-shopping"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <div class="category_rate">
+                                    <span>Spices</span>
+                                    <ul>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <h6>Chilli Flakes Pack</h6>
+                                <div class="price_quantity">
+                                    <div class="price">
+                                        <span> <b>2.99</b> sar</span>
+                                        <span class="old_price"> 5.50 sar</span>
+                                    </div>
+                                    <div class="q">
+                                        <span>500 g</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 p-2">
+                        <a href="product.html" class="product_card" data-aos="fade-up">
+                            <div class="media_container">
+                                <div class="img front">
+                                    <img src="assets/images/products/19.jpg" alt="p-1">
+                                </div>
+                                <div class="img back">
+                                    <img src="assets/images/products/19.jpg" alt="p-1">
+                                    <div class="actions">
+                                        <button class="fav_btn active"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="modal" data-bs-target="#productModal" class="eye-btn">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </button>
+                                        <button><i class="fa-regular fa-arrow-right-arrow-left"></i></button>
+                                        <button><i class="fa-regular fa-bag-shopping"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <div class="category_rate">
+                                    <span>Vegetables</span>
+                                    <ul>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <h6>Red organic Onion</h6>
+                                <div class="price_quantity">
+                                    <div class="price">
+                                        <span> <b>2.99</b> sar</span>
+                                        <span class="old_price"> 5.50 sar</span>
+                                    </div>
+                                    <div class="q">
+                                        <span>1 Pack</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 p-2">
+                        <a href="product.html" class="product_card" data-aos="fade-up">
+                            <div class="media_container">
+                                <div class="img front">
+                                    <div class="thumb">
+                                        <span>New</span>
+                                    </div>
+                                    <img src="assets/images/products/14.jpg" alt="p-1">
+                                </div>
+                                <div class="img back">
+                                    <img src="assets/images/products/14.jpg" alt="p-1">
+                                    <div class="actions">
+                                        <button class="fav_btn"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="modal" data-bs-target="#productModal" class="eye-btn">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </button>
+                                        <button><i class="fa-regular fa-arrow-right-arrow-left"></i></button>
+                                        <button><i class="fa-regular fa-bag-shopping"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <div class="category_rate">
+                                    <span>Fruit</span>
+                                    <ul>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <h6>Red Guava</h6>
+                                <div class="price_quantity">
+                                    <div class="price">
+                                        <span> <b>2.99</b> sar</span>
+                                        <span class="old_price"> 5.50 sar</span>
+                                    </div>
+                                    <div class="q">
+                                        <span>1 Pack</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 p-2">
+                        <a href="product.html" class="product_card" data-aos="fade-up">
+                            <div class="media_container">
+                                <div class="img front">
+                                    <div class="thumb">
+                                        <span>SALE</span>
+                                    </div>
+                                    <img src="assets/images/products/1.jpg" alt="p-1">
+                                </div>
+                                <div class="img back">
+                                    <img src="assets/images/products/back-1.jpg" alt="p-1">
+                                    <div class="actions">
+                                        <button class="fav_btn "><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="modal" data-bs-target="#productModal" class="eye-btn">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </button>
+                                        <button><i class="fa-regular fa-arrow-right-arrow-left"></i></button>
+                                        <button><i class="fa-regular fa-bag-shopping"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <div class="category_rate">
+                                    <span>Chocos</span>
+                                    <ul>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <h6>Mixed Fruits Chocolates Pack</h6>
+                                <div class="price_quantity">
+                                    <div class="price">
+                                        <span> <b>2.99</b> sar</span>
+                                        <span class="old_price"> 5.50 sar</span>
+                                    </div>
+                                    <div class="q">
+                                        <span>1 Pack</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 p-2">
+                        <a href="product.html" class="product_card" data-aos="fade-up">
+                            <div class="media_container">
+                                <div class="img front">
+                                    <div class="percentage">
+                                        <span>30%</span>
+                                    </div>
+                                    <div class="thumb">
+                                        <span>NEW</span>
+                                    </div>
+                                    <img src="assets/images/products/2.jpg" alt="p-1">
+                                </div>
+                                <div class="img back">
+                                    <img src="assets/images/products/back-2.jpg" alt="p-1">
+                                    <div class="actions">
+                                        <button class="fav_btn active"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="modal" data-bs-target="#productModal" class="eye-btn">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </button>
+                                        <button><i class="fa-regular fa-arrow-right-arrow-left"></i></button>
+                                        <button><i class="fa-regular fa-bag-shopping"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="category_rate">
+                                    <span>Juices</span>
+                                    <ul>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <h6>Organic Apple Juice Pack</h6>
+                                <div class="price_quantity">
+                                    <div class="price">
+                                        <span> <b>2.99</b> sar</span>
+                                        <span class="stock"> 3 left</span>
+                                    </div>
+                                    <div class="q">
+                                        <span>1 Pack</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 p-2">
+                        <a href="product.html" class="product_card" data-aos="fade-up">
+                            <div class="media_container">
+                                <div class="img front">
+                                    <div class="thumb">
+                                        <span>HOT</span>
+                                    </div>
+                                    <img src="assets/images/products/3.jpg" alt="p-1">
+                                    <div class="countdown_timer">
+                                        <div class="timer-item">
+                                            <span class="days">00</span>
+                                            <span class="label">Days</span>
+                                        </div>
+                                        <div class="timer-item">
+                                            <span class="hours">00</span>
+                                            <span class="label">Hours</span>
+                                        </div>
+                                        <div class="timer-item">
+                                            <span class="minutes">00</span>
+                                            <span class="label">Minutes</span>
+                                        </div>
+                                        <div class="timer-item">
+                                            <span class="seconds">00</span>
+                                            <span class="label">Seconds</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img back">
+                                    <img src="assets/images/products/back-3.jpg" alt="p-1">
+                                    <div class="actions">
+                                        <button class="fav_btn"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="modal" data-bs-target="#productModal" class="eye-btn">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </button>
+                                        <button><i class="fa-regular fa-arrow-right-arrow-left"></i></button>
+                                        <button><i class="fa-regular fa-bag-shopping"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="category_rate">
+                                    <span>Chocos</span>
+                                    <ul>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <h6>Mixed Almond nuts juice Pack</h6>
+                                <div class="price_quantity">
+                                    <div class="price">
+                                        <span> <b>2.99</b> sar</span>
+                                        <span class="old_price"> 5.50 sar</span>
+                                    </div>
+                                    <div class="q">
+                                        <span>250 g</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 p-2">
+                        <a href="product.html" class="product_card" data-aos="fade-up">
+                            <div class="media_container">
+                                <div class="img front">
+                                    <img src="assets/images/products/4.jpg" alt="p-1">
+                                </div>
+                                <div class="img back">
+                                    <img src="assets/images/products/back-4.jpg" alt="p-1">
+                                    <div class="actions">
+                                        <button class="fav_btn"><i class="fa-regular fa-heart"></i></button>
+                                        <button data-bs-toggle="modal" data-bs-target="#productModal" class="eye-btn">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </button>
+                                        <button><i class="fa-regular fa-arrow-right-arrow-left"></i></button>
+                                        <button><i class="fa-regular fa-bag-shopping"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="category_rate">
+                                    <span>Chocos</span>
+                                    <ul>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <h6>Fresh Mango Slice Juice</h6>
+                                <div class="price_quantity">
+                                    <div class="price">
+                                        <span> <b>2.99</b> sar</span>
+                                        <span class="stock"> out of stock </span>
+                                    </div>
+                                    <div class="q">
+                                        <span>1 Pack</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ***** vendeors ***** -->
+        <section class="vendeors_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 p-2">
+                        <h3 data-aos="fade-up">Top <span>Vendors</span></h3>
+                        <p data-aos="fade-up">Discover Our Trusted Partners: Excllence & Reliability in Every choice</p>
+                    </div>
+                    <div class="col-lg-5 col-12 p-2">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <!-- vendor1 -->
+                            <div class="tab-pane fade show active" id="v-pills-vendor1" role="tabpanel"
+                                aria-labelledby="v-pills-vendor1-tab">
+                                <div class="vendor_img" data-aos="zoom-in-up">
+                                    <a href="vendor-profile.html" class="link">
+                                        <i class="fa-solid fa-arrow-up-right"></i>
+                                    </a>
+
+                                    <img src="assets/images/vendors/img-1.jpg" alt="vendeor1">
+
+                                    <a href="vendor-profile.html" class="logo">
+                                        <img src="assets/images/vendors/vendor-1.jpg" alt="vendeor1">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- vendor2 -->
+                            <div class="tab-pane fade" id="v-pills-vendor2" role="tabpanel"
+                                aria-labelledby="v-pills-vendor2-tab">
+                                <div class="vendor_img" data-aos="zoom-in-up">
+                                    <a href="vendor-profile.html" class="link">
+                                        <i class="fa-solid fa-arrow-up-right"></i>
+                                    </a>
+
+                                    <img src="assets/images/vendors/img-2.jpg" alt="vendeor2">
+
+                                    <a href="vendor-profile.html" class="logo">
+                                        <img src="assets/images/vendors/vendor-2.jpg" alt="vendeor2">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- vendor3 -->
+                            <div class="tab-pane fade" id="v-pills-vendor3" role="tabpanel"
+                                aria-labelledby="v-pills-vendor3-tab">
+                                <div class="vendor_img" data-aos="zoom-in-up">
+                                    <a href="vendor-profile.html" class="link">
+                                        <i class="fa-solid fa-arrow-up-right"></i>
+                                    </a>
+
+                                    <img src="assets/images/vendors/img-3.jpg" alt="vendeor3">
+
+                                    <a href="vendor-profile.html" class="logo">
+                                        <img src="assets/images/vendors/vendor-3.jpg" alt="vendeor3">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- vendor4 -->
+                            <div class="tab-pane fade" id="v-pills-vendor3" role="tabpanel"
+                                aria-labelledby="v-pills-vendor3-tab">
+                                <div class="vendor_img" data-aos="zoom-in-up">
+                                    <a href="vendor-profile.html" class="link">
+                                        <i class="fa-solid fa-arrow-up-right"></i>
+                                    </a>
+
+                                    <img src="assets/images/vendors/img-4.jpg" alt="vendeor4">
+
+                                    <a href="vendor-profile.html" class="logo">
+                                        <img src="assets/images/vendors/vendor-4.jpg" alt="vendeor4">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-12 p-2">
+                        <div class="nav flex-column nav-pills gap-3 me-3" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <!-- tab1 -->
+                            <button class="nav-link active" id="v-pills-vendor1-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-vendor1" type="button" role="tab"
+                                aria-controls="v-pills-vendor1" aria-selected="true" data-aos="fade-up">
+                                <div class="title">
+                                    <h6>Mira Fashion Pvt. Ltd.</h6>
+                                    <span>Sales - 587</span>
+                                </div>
+                                <p>Fruits (5) | Vegetables (30) | Snacks (09) </p>
+                            </button>
+                            <!-- tab1 -->
+                            <button class="nav-link" id="v-pills-vendor2-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-vendor2" type="button" role="tab"
+                                aria-controls="v-pills-vendor2" aria-selected="false" data-aos="fade-up">
+                                <div class="title">
+                                    <h6>Eelna Fashion Pvt. Ltd.</h6>
+                                    <span>Sales - 428</span>
+                                </div>
+                                <p>Fruits (8) | Vegetables (15) | Snacks (04) </p>
+                            </button>
+                            <!-- tab1 -->
+                            <button class="nav-link" id="v-pills-vendor3-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-vendor3" type="button" role="tab"
+                                aria-controls="v-pills-vendor3" aria-selected="false" data-aos="fade-up">
+                                <div class="title">
+                                    <h6>Mario Fashion Pvt. Ltd.</h6>
+                                    <span>Sales - 1024</span>
+                                </div>
+                                <p>Fruits (16) | Vegetables (42) | Snacks (18) </p>
+                            </button>
+                            <!-- tab1 -->
+                            <button class="nav-link" id="v-pills-vendor3-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-vendor3" type="button" role="tab"
+                                aria-controls="v-pills-vendor3" aria-selected="false" data-aos="fade-up">
+                                <div class="title">
+                                    <h6>Maria Fashion Pvt. Ltd.</h6>
+                                    <span>Sales - 210</span>
+                                </div>
+                                <p>Fruits (2) | Vegetables (10) | Snacks (03)</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ***** Features ***** -->
+        <section class="features_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12 p-2">
+                        <div class="feature_card" data-aos="fade-up">
+                            <div class="img">
+                                <img src="assets/images/features/1.png" alt="f1">
+                            </div>
+                            <h6>Free Shipping</h6>
+                            <p>Free shipping on all Us order or above $200</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 p-2">
+                        <div class="feature_card" data-aos="fade-up">
+                            <div class="img">
+                                <img src="assets/images/features/2.png" alt="f2">
+                            </div>
+                            <h6>24x7 Support</h6>
+                            <p>Contact us 24 hours a day, 7 days a week</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 p-2">
+                        <div class="feature_card" data-aos="fade-up">
+                            <div class="img">
+                                <img src="assets/images/features/3.png" alt="f3">
+                            </div>
+                            <h6>30 Days Return</h6>
+                            <p>Simply return it within 30 days for an exchange</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 p-2">
+                        <div class="feature_card" data-aos="fade-up">
+                            <div class="img">
+                                <img src="assets/images/features/4.png" alt="f4">
+                            </div>
+                            <h6>Payment Secure</h6>
+                            <p>Contact us 24 hours a day, 7 days a week</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ***** blogs ***** -->
+        <section class="blogs_section">
+            <div class="container">
+                <div class="swiper categories_swiper">
+                    <div class="swiper-wrapper">
+                        <!-- slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="blog_card" data-aos="fade-up">
+                                <img src="assets/images/blogs/10.jpg" alt="">
+                                <a href="blog-details.html" class="link">
+                                    <span>May 10,2023 - organic</span>
+                                    <h6>Best way to solve business deal issue.</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="blog_card" data-aos="fade-up">
+                                <img src="assets/images/blogs/7.jpg" alt="">
+                                <a href="blog-details.html" class="link">
+                                    <span>May 10,2023 - organic</span>
+                                    <h6>Best way to solve business deal issue.</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="blog_card" data-aos="fade-up">
+                                <img src="assets/images/blogs/8.jpg" alt="">
+                                <a href="blog-details.html" class="link">
+                                    <span>May 10,2023 - organic</span>
+                                    <h6>Best way to solve business deal issue.</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- slide 4 -->
+                        <div class="swiper-slide">
+                            <div class="blog_card" data-aos="fade-up">
+                                <img src="assets/images/blogs/9.jpg" alt="">
+                                <a href="blog-details.html" class="link">
+                                    <span>May 10,2023 - organic</span>
+                                    <h6>Best way to solve business deal issue.</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ***** Footer ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 p-2">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png">
+                    </a>
+                    <p>Lewoint is the biggest market of grocery products. Get your daily needs from our store.</p>
+                    <div class="btns">
+                        <a href="javascript:void(0)">
+                            <img src="assets/images/icons/app-store.svg" alt="app-store">
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img src="assets/images/icons/google-play.svg" alt="google-play">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-12 p-2">
+                    <h3>Category</h3>
+                    <ul>
+                        <li><a href="#">Dairy & Milk</a></li>
+                        <li><a href="#">Snack & Spice</a></li>
+                        <li><a href="#">Fast Food</a></li>
+                        <li><a href="#">Bakery</a></li>
+                        <li><a href="#">Seafood</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-12 p-2">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Legal Notice</a></li>
+                        <li><a href="terms-conditions.html">Terms & conditions</a></li>
+                        <li><a href="#">Secure payment</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-12 p-2">
+                    <h3>Account</h3>
+                    <ul>
+                        <li><a href="login.html">Sign In</a></li>
+                        <li><a href="cart.html">View Cart</a></li>
+                        <li><a href="return-policy.html">Return Policy</a></li>
+                        <li><a href="#">Become a Vendor</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                        <li><a href="#">Payments</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-12 p-2">
+                    <h3>Contact</h3>
+
+                    <ul>
+                        <li><i class="fa-regular fa-map-marker-alt"></i> 1234, 5th Avenue, New York, USA</li>
+                        <li><i class="fa-brands fa-whatsapp"></i> +123 456 7890</li>
+                        <li><i class="fa-regular fa-envelope"></i> example@example.com</li>
+                    </ul>
+
+                    <div class="social">
+                        <a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="javascript:void(0)"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-12 p-2">
+                    <div class="copy_rights">
+                        <p>Copyright © 2022 Lewoint. All Rights Reserved.</p>
+                        <div class="payments">
+                            <img src="assets/images/payments/1.svg" alt="mastercard">
+                            <img src="assets/images/payments/2.svg" alt="visa">
+                            <img src="assets/images/payments/3.svg" alt="paypal">
+                            <img src="assets/images/payments/4.svg" alt="apple pay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ***** Responsive Nav ***** -->
+    <div class="responsive_navbar">
+        <ul>
+            <li>
+                <a href="orders.html">
+                    <img src="assets/images/icons/orders.svg">
+                    <h6>My Orders</h6>
+                </a>
+            </li>
+            <li>
+                <a href="wishlist.html">
+                    <img src="assets/images/icons/heart.svg">
+                    <h6>Wishlist</h6>
+                </a>
+            </li>
+            <li>
+                <a href="cart.html">
+                    <img src="assets/images/icons/shopping-bag.svg">
+                    <h6>Cart</h6>
+                </a>
+            </li>
+            <li>
+                <a href="login.html">
+                    <img src="assets/images/icons/user.svg">
+                    <h6>My Account</h6>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ***** Modals ***** -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body product_view">
+                    <div class="row">
+                        <div class="col-lg-5 col-12 p-2">
+                            <div class="product_img">
+                                <img src="assets/images/products/camera.jpg" alt="PS5 Camera">
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-12 p-2">
+                            <div class="content">
+                                <h3>PS5 HD Camera</h3>
+
+                                <div class="d-flex align-items-center gap-2 my-3">
+                                    <ul class="rate">
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star filled"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <span> | </span>
+                                    <span>458 Ratings</span>
+                                </div>
+
+                                <p>
+                                    Add a personal touch to your gameplay broadcasts and vlogs with the HD camera for
+                                    PS5
+                                    console. Featuring dual wide-angle lenses and a built-in stand, the camera puts you
+                                    in the spotlight.
+                                </p>
+
+                                <h6 class="mb-4 price">Price: <span>$59.99</span> <span class="old_price">$69.99</span>
+                                </h6>
+
+                                <h6>Storage</h6>
+                                <div class="radios">
+                                    <label for="128gb">
+                                        <input type="radio" name="storage" id="128gb" checked>
+                                        <span>128GB</span>
+                                    </label>
+                                    <label for="256gb">
+                                        <input type="radio" name="storage" id="256gb">
+                                        <span>256GB</span>
+                                    </label>
+                                    <label for="512gb">
+                                        <input type="radio" name="storage" id="512gb">
+                                        <span>512GB</span>
+                                    </label>
+                                    <label for="1tb">
+                                        <input type="radio" name="storage" id="1tb">
+                                        <span>1TB</span>
+                                    </label>
+                                </div>
+
+                                <div class="actions">
+                                    <div class="quantity">
+                                        <button><i class="fa-solid fa-minus"></i></button>
+                                        <span>1</span>
+                                        <button><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                    <button class="cart_btn">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="theme_customer">
+        <i class="fa-regular fa-gear"></i>
+        <div class="theme_customer_container">
+            <div class="theme_customer_header">
+                <h6>Color</h6>
+                <button class="close_btn"><i class="fa-regular fa-xmark"></i></button>
+            </div>
+            <div class="theme_customer_body">
+                <div class="color_picker">
+                    <div class="color_options">
+                        <button class="color_option" data-color="#FF6B6B" style="background: #FF6B6B;"></button>
+                        <button class="color_option" data-color="#6c7fd8" style="background: #6c7fd8;"></button>
+                        <button class="color_option" data-color="#45B7D1" style="background: #45B7D1;"></button>
+                        <button class="color_option" data-color="#96CEB4" style="background: #96CEB4;"></button>
+                        <button class="color_option" data-color="#e91e63" style="background: #e91e63;"></button>
+                        <button class="color_option" data-color="#D4A5A5" style="background: #D4A5A5;"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** Scripts ***** -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/app.js?v=1"></script>
+</body>
+
+</html>

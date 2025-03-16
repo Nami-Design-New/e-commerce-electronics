@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- SEO: Description, Keywords, Author, and Robots -->
+    <meta name="description"
+        content="Lewoint - Your premier destination for electronics, gadgets, and tech accessories. Find the latest devices and tech innovations at competitive prices." />
+    <meta name="keywords"
+        content="electronics store, gadgets, smartphones, laptops, computers, tech accessories, digital devices, Lewoint" />
+    <meta name="author" content="Lewoint Team" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Data for Social Media -->
+    <meta property="og:title" content="Lewoint - Electronics Store" />
+    <meta property="og:description"
+        content="Discover cutting-edge electronics and tech gadgets at Lewoint. Shop smartphones, laptops, accessories and more with expert support!" />
+    <meta property="og:image" content="assets/images/logo.png" />
+    <meta property="og:url" content="https://www.lewoint.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lewoint - Electronics Store" />
+    <meta name="twitter:description"
+        content="Your one-stop shop for premium electronics. Find the latest tech with expert guidance and competitive prices at Lewoint." />
+    <meta name="twitter:image" content="assets/images/logo.png" />
+
+    <!-- Favicon and Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/style.css?v=4" />
+
+    <title>Lewoint - E-commerce</title>
+
+    <script>
+        window.addEventListener("load", () => {
+            const savedColor = localStorage.getItem("themeColor");
+            if (savedColor) {
+                document.documentElement.style.setProperty("--second", savedColor);
+                colorOptions.forEach((option) => {
+                    if (option.getAttribute("data-color") === savedColor) {
+                        option.classList.add("active");
+                    }
+                });
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- ***** Header ***** -->
+    <header>
+        <!-- ***** Top Bar ***** -->
+        <div class="top_bar">
+            <div class="container">
+                <p class="hide-sm">Flat 50% Off On Grocery Shop.</p>
+
+                <div class="actions">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Currency
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">EUR €</a></li>
+                            <li><a class="dropdown-item" href="#">USD $</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Location
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/flags/Flag_of_Egypt.svg" alt=""> Egypt
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/flags/ar.svg" alt=""> Saudia Arabia
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/flags/Flag_of_Kuwait.svg" alt=""> Kuwait
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Language
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/flags/en.png" alt=""> English
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/flags/ar.svg" alt=""> Arabic
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/flags/sp.svg" alt=""> French
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="faqs.html" class="link hide-sm">Need Help?</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ***** Navigation ***** -->
+        <nav class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html" class="logo"><img src="assets/images/logo.png"></a>
+
+                <a href="categories.html" class="categories_btn">
+                    <img src="assets/images/icons/categories.svg" alt="">
+                </a>
+            </div>
+
+            <form action="products.html">
+                <select name="category" id="category" class="hide-sm">
+                    <option value="all">All categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Fashion</option>
+                </select>
+                <input type="search" placeholder="Search for products...">
+                <button type="submit"><i class="fa-regular fa-search"></i></button>
+            </form>
+
+            <div class="actions hide-sm">
+                <a href="login.html">
+                    <img src="assets/images/icons/user.svg" alt="user">
+                    <!-- Accout if authed -->
+                    <h6>Login</h6>
+                </a>
+
+                <a href="wishlist.html">
+                    <img src="assets/images/icons/heart.svg">
+                    <h6>Wishlist</h6>
+                </a>
+
+                <a href="cart.html">
+                    <img src="assets/images/icons/shopping-bag.svg">
+                    <h6>Cart</h6>
+                </a>
+
+                <a href="categories.html">
+                    <img src="assets/images/icons/categories.svg" alt="">
+                    <h6>categories</h6>
+                </a>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- ***** Main Content ***** -->
+    <main>
+        <section class="page_header">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <h6>Cart</h6>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-angles-right"></i>
+                        </li>
+                        <li>
+                            <p>cart</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ***** cart ***** -->
+        <section class="cart_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 p-2">
+                        <div class="tabel_container">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Total</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">
+                                            <div class="product">
+                                                <img src="assets/images/products/iphone-15.jpg" alt="iPhone 15">
+                                                <h6>iPhone 15</h6>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="center_div">
+                                                $999.99
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="quantity">
+                                                <button><i class="fa-solid fa-minus"></i></button>
+                                                <span>1</span>
+                                                <button><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="center_div">
+                                                $999.99
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="center_div">
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            <div class="product">
+                                                <img src="assets/images/products/smartwatch-front.jpg"
+                                                    alt="SW200 Smartwatch">
+                                                <h6>SW200 Smart Fitness Watch</h6>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="center_div">
+                                                $199.99
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="quantity">
+                                                <button><i class="fa-solid fa-minus"></i></button>
+                                                <span>1</span>
+                                                <button><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="center_div">
+                                                $199.99
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="center_div">
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            <div class="product">
+                                                <img src="assets/images/products/keyboard-front.jpg"
+                                                    alt="ZH980 Keyboard">
+                                                <h6>ZH980 Mechanical Gaming Keyboard</h6>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="center_div">
+                                                $89.99
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="quantity">
+                                                <button><i class="fa-solid fa-minus"></i></button>
+                                                <span>1</span>
+                                                <button><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="center_div">
+                                                $89.99
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="center_div">
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            <div class="product">
+                                                <img src="assets/images/products/watch2.jpg" alt="Apple Watch">
+                                                <h6>Apple Watch Series 7</h6>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="center_div">
+                                                $449.99
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="quantity">
+                                                <button><i class="fa-solid fa-minus"></i></button>
+                                                <span>1</span>
+                                                <button><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="center_div">
+                                                $449.99
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="center_div">
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            <div class="product">
+                                                <img src="assets/images/products/airpods.jpg" alt="AirPods Pro">
+                                                <h6>AirPods Pro</h6>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="center_div">
+                                                $249.99
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="quantity">
+                                                <button><i class="fa-solid fa-minus"></i></button>
+                                                <span>1</span>
+                                                <button><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="center_div">
+                                                $249.99
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="center_div">
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-12 p-2 d-flex align-items-center justify-content-between mt-3">
+                        <h4 class="mb-0">Total Cart : <span>$1,989.95</span></h4>
+                        <a href="checkout.html" class="checkout_btn">
+                            Check Out
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ***** Footer ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 p-2">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png">
+                    </a>
+                    <p>Lewoint is the biggest market of grocery products. Get your daily needs from our store.</p>
+                    <div class="btns">
+                        <a href="javascript:void(0)">
+                            <img src="assets/images/icons/app-store.svg" alt="app-store">
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img src="assets/images/icons/google-play.svg" alt="google-play">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-12 p-2">
+                    <h3>Category</h3>
+                    <ul>
+                        <li><a href="#">Dairy & Milk</a></li>
+                        <li><a href="#">Snack & Spice</a></li>
+                        <li><a href="#">Fast Food</a></li>
+                        <li><a href="#">Bakery</a></li>
+                        <li><a href="#">Seafood</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-12 p-2">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Legal Notice</a></li>
+                        <li><a href="terms-conditions.html">Terms & conditions</a></li>
+                        <li><a href="#">Secure payment</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-12 p-2">
+                    <h3>Account</h3>
+                    <ul>
+                        <li><a href="login.html">Sign In</a></li>
+                        <li><a href="cart.html">View Cart</a></li>
+                        <li><a href="return-policy.html">Return Policy</a></li>
+                        <li><a href="#">Become a Vendor</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                        <li><a href="#">Payments</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-12 p-2">
+                    <h3>Contact</h3>
+
+                    <ul>
+                        <li><i class="fa-regular fa-map-marker-alt"></i> 1234, 5th Avenue, New York, USA</li>
+                        <li><i class="fa-brands fa-whatsapp"></i> +123 456 7890</li>
+                        <li><i class="fa-regular fa-envelope"></i> example@example.com</li>
+                    </ul>
+
+                    <div class="social">
+                        <a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="javascript:void(0)"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-12 p-2">
+                    <div class="copy_rights">
+                        <p>Copyright © 2022 Lewoint. All Rights Reserved.</p>
+                        <div class="payments">
+                            <img src="assets/images/payments/1.svg" alt="mastercard">
+                            <img src="assets/images/payments/2.svg" alt="visa">
+                            <img src="assets/images/payments/3.svg" alt="paypal">
+                            <img src="assets/images/payments/4.svg" alt="apple pay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ***** Responsive Nav ***** -->
+    <div class="responsive_navbar">
+        <ul>
+            <li>
+                <a href="orders.html">
+                    <img src="assets/images/icons/orders.svg">
+                    <h6>My Orders</h6>
+                </a>
+            </li>
+            <li>
+                <a href="wishlist.html">
+                    <img src="assets/images/icons/heart.svg">
+                    <h6>Wishlist</h6>
+                </a>
+            </li>
+            <li>
+                <a href="cart.html">
+                    <img src="assets/images/icons/shopping-bag.svg">
+                    <h6>Cart</h6>
+                </a>
+            </li>
+            <li>
+                <a href="edit-profile.html">
+                    <img src="assets/images/icons/user.svg">
+                    <h6>My Account</h6>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="theme_customer">
+        <i class="fa-regular fa-gear"></i>
+        <div class="theme_customer_container">
+            <div class="theme_customer_header">
+                <h6>Color</h6>
+                <button class="close_btn"><i class="fa-regular fa-xmark"></i></button>
+            </div>
+            <div class="theme_customer_body">
+                <div class="color_picker">
+                    <div class="color_options">
+                        <button class="color_option" data-color="#FF6B6B" style="background: #FF6B6B;"></button>
+                        <button class="color_option" data-color="#6c7fd8" style="background: #6c7fd8;"></button>
+                        <button class="color_option" data-color="#45B7D1" style="background: #45B7D1;"></button>
+                        <button class="color_option" data-color="#96CEB4" style="background: #96CEB4;"></button>
+                        <button class="color_option" data-color="#e91e63" style="background: #e91e63;"></button>
+                        <button class="color_option" data-color="#D4A5A5" style="background: #D4A5A5;"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** Scripts ***** -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/app.js?v=1"></script>
+</body>
+
+</html>
